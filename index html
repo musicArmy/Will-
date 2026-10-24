@@ -6,15 +6,6 @@
   <title>FIFA WORLD CUP 2026</title>     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMP9REY96D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FMP9REY96D');
-</script>
   <style>  
    * { margin: 0; padding: 0; box-sizing: border-box; }  
     html, body {  
@@ -46,13 +37,13 @@
   </style>  
 </head>  
 
- 
   
+   
   <body>  
   <div class="shaka-video-container" data-shaka-player>  
-    <video autoplay playsinline preload="metadata" poster="https://w0.peakpx.com/wallpaper/183/933/HD-wallpaper-fifa-world-cup-26-u-sports-soccer-mexico-canada-football-fifa-world-cup-world-cup-2026-we-are-26-sport-event-international-competition-global-event-tournament.jpg"></video>  
+    <video autoplay playsinline preload="metadata" poster="https://w0.peakpx.com/wallpaper/183/933/HD-wallpaper-fifa-world-cup-26-u-sports-soccer-mexico-canada-football-fifa-world-cup-world-cup-20[...]
   </div>  
-  
+   
   <script>  
     document.addEventListener('DOMContentLoaded', async () => {  
       shaka.polyfill.installAll();  
@@ -76,26 +67,26 @@
           'quality', 'fullscreen'  
         ],  
         volumeBarColors: {  
-  base: 'rgba(0, 136, 255, 0.3)',  
-  level: 'rgb(0, 136, 255)'  
-},  
-seekBarColors: {
-  base: 'rgba(90, 0, 0, 0.3)',
-  buffered: 'rgba(120, 0, 0, 0.6)',
-  played: 'rgb(170, 0, 0)'
-}
+   base: 'rgba(0, 136, 255, 0.3)',  
+   level: 'rgb(0, 136, 255)'  
+ },  
+ seekBarColors: {
+   base: 'rgba(90, 0, 0, 0.3)',
+   buffered: 'rgba(120, 0, 0, 0.6)',
+   played: 'rgb(170, 0, 0)'
+ }
       });  
-  
    
+    
       let drmConfig = {  
         clearKeys: {  
           "18e6af4a0daf2a1fdfbdc5b541520c88":
- "ca0b64b84edb4f20eb1e135ff03db4f7"  
+  "ca0b64b84edb4f20eb1e135ff03db4f7"  
         }  
       };  
-  
+   
       let streamUrl = "https://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/mmvlg151u6/out/v1/ab9d1f193c094ee8a9305f983a716f35/cenc.mpd?";  
-  
+   
       player.configure({  
         drm: drmConfig,  
         streaming: {  
@@ -120,11 +111,11 @@ seekBarColors: {
           }  
         }  
       });  
-  
+   
       player.addEventListener('error', (event) => {  
         console.error('Shaka Player Error:', event.detail);  
       });  
-  
+   
       try {  
         await player.load(streamUrl);  
         console.log("Stream loaded successfully");  
@@ -134,5 +125,4 @@ seekBarColors: {
     });  
   </script>  
   </body>  
-<script>(function(s){s.dataset.zone='11514537',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
   </html>
