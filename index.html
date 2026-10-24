@@ -37,11 +37,11 @@
     </style>  
 </head> 
 
-   
     
+   
   <body>  
   <div class="shaka-video-container" data-shaka-player>  
-    <video autoplay playsinline preload="metadata" poster="https://w0.peakpx.com/wallpaper/183/933/HD-wallpaper-fifa-world-cup-26-u-sports-soccer-mexico-canada-football-fifa-world-cup-world-cup-2018-soccer-2018-4k-wallpaper-preview.jpg"></video>  
+    <video autoplay playsinline preload="metadata" poster="https://w0.peakpx.com/wallpaper/183/933/HD-wallpaper-fifa-world-cup-26-u-sports-soccer-mexico-canada-football-fifa-world-cup-world-cup-20[...]
   </div>  
     
   <script>  
@@ -82,9 +82,8 @@
           }
         }, { passive: false });
 
-        window.addEventListener('beforeunload', (event) => {
-          event.preventDefault();
-        });
+        // Do not intercept unload. Preventing beforeunload triggers Chrome's
+        // native "Leave site?" dialog even for a normal video page.
       };
 
       blockExternalAds();
@@ -120,7 +119,7 @@
   }
       });  
     
-     
+      
       let drmConfig = {  
         clearKeys: {  
           "8c80205dcd2490ef9386a322c46aef12":
